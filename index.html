@@ -16,6 +16,8 @@
     <main>
     <header> <!-- 제목, 사진, 컨택 address -->
         <h1>수연의 포트폴리오</h1>
+        <meta name="author" content="홍길동">
+        <meta name="description" content="개발자 수연의 포트폴리오 페이지입니다.">
     </header>
     
     <section class="overview" id="overview">
@@ -62,23 +64,25 @@
     <section class="education" id="education">
         <h2>학력</h2>
         <ul>
-            <li>와플대학 박사</li>
+            <li>덕성여자대학교 디지털소프트웨어공학부 24년도 입학</li>
         </ul>
     </section>
 <!-- 연구 소개 -->
     <section class="study" id="study">
         <h2>연구</h2>
+        <details>
         <summary>쿨쿨쿨</summary>
             <ul>
                 <li>낮잠을 끝내주게 자는 방법</li>
                 <li>늦잠을 끝내주게 자는 방법</li>
             </ul>
+        </details>
     </section>
 <!-- 프로젝트 소개 -->    
     <section class="projects" id="projects">
         <h2>프로젝트</h2>
         <ol>
-            <li>
+            <li> <!-- 각 프로젝트의 이미지 및 GitHub 링크 -->
                 <strong>카페 소개 프로젝트</strong><br>
                 덕성여자대학교 교내/외 카페를 볼 수 있는 웹 사이트 제작
                 <div class="project-table-wrapper">
@@ -99,27 +103,11 @@
                     </table>
                 </div>
             </li>
-            <li>
-                <p></p>
-                <strong>두 번째 프로젝트</strong><br>
-                덕성여자대학교 교내/외 맛집을 볼 수 있는 웹 사이트 제작
-                <div class="project-table-wrapper">
-                    <table class="project-table">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="프로젝트 볼 수 있는 링크" target="_blank">
-                                        <img src="media/project.png" width="150" height="150" alt="프로젝트 바로 가기">
-                                    </a>
-                                    
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </li>
-        </ol>
     </section>
     </main>
 </body>
+<footer class="footer-fixed">
+    제작자: 수연 | 이메일: <a href="mailto:ally5336@naver.com" style="color: #aad;">ally5336@naver.com</a>
+</footer>
+
 </html>
