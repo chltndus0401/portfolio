@@ -1,161 +1,133 @@
-/* Google Fonts 적용 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-
-/* 기본 스타일 */
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9fc;
-    color: #333;
-    display: flex;
-}
-
-header {
-    background: #4A5EAA;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 28px;
-    font-weight: 400;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* 왼쪽 사이드바 네비게이션 */
-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 100%;
-    background: #2C3A62;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: 0.3s;
-    text-align: left;
-    display: block;
-}
-
-nav a:hover {
-    background: #4A5EAA;
-    border-left: 5px solid #fff;
-    padding-left: 15px;
-}
-
-/* 본문 영역 조정 */
-main {
-    margin-left: 220px;
-    width: calc(100% - 220px);
-    padding: 30px;
-}
-
-/* 섹션 스타일 */
-section {
-    width: 85%;
-    margin: 40px auto;
-    padding: 30px;
-    background: white;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-    border-radius: 12px;
-}
-
-h2 {
-    border-bottom: 2px solid #4A5EAA;
-    padding-bottom: 8px;
-    color: #2C3A62;
-    margin-bottom: 20px;
-}
-
-/* 프로필 이미지 */
-.profile-img {
-    display: block;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin: 0 auto;
-    object-fit: cover;
-    border: 4px solid #4A5EAA;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* 연락처 스타일 */
-.contact {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.contact-item {
-    margin: 10px 0;
-}
-
-.contact-item a {
-    text-decoration: none;
-    color: #3E4E88;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.contact-item a:hover {
-    color: #2C3A62;
-}
-
-/* 프로젝트 섹션 */
-.project-table-wrapper {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.project-table img {
-    width: 180px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease-in-out;
-}
-
-.project-table img:hover {
-    transform: scale(1.03);
-}
-
-/* 고정형 꼬리말 - 작고 예쁘게 개선 */
-.footer-fixed {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font-size: 12px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    backdrop-filter: blur(4px);
-    font-weight: 300;
-    transition: opacity 0.3s ease;
-}
-
-.footer-fixed:hover {
-    opacity: 0.9;
-}
-
-.footer-fixed a {
-    color: #aad;
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.footer-fixed a:hover {
-    text-decoration: underline;
-}
-
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="수연">
+    <meta name="description" content="개발자 수연의 포트폴리오 페이지입니다.">
+    <title>talking potatoes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav> <!-- 화면 왼쪽 상단에 웹 페이지 버튼 배치-->
+        <a href="#overview">소개</a>
+        <a href="#career">경력</a>
+        <a href="#education">학력</a>
+        <a href="#study">연구</a>
+        <a href="#projects">프로젝트</a>
+    </nav>
+    <main>
+    <header> <!-- 제목, 사진, 컨택 address -->
+        <h1>수연의 포트폴리오</h1>
+    </header>
+    
+    <section class="overview" id="overview">
+        <img src="media/prof.jpg" alt="프로필 이미지" class="profile-img">
+        <div class="contact">
+            <h2>Contact & Channels</h2>
+            <div class="contact-item">
+                <span class="label">e-mail:</span>
+                <a href="mailto:ally5336@naver.com" target="_blank">
+                ally5336@naver.com
+                </a>
+            </div>
+            <div class="contact-item">
+                <span class="label">GitHub:</span>
+                <a href="https://github.com/chltndus0401" target="_blank">
+                https://chltndus0401.github.io/
+                </a>
+            </div>
+            <div class="contact-item">
+                <span class="label">Notion:</span>
+                <a href="https://likeable-stitch-a4a.notion.site/1c8dda5d9df9805f95d3c522370f55ad?pvs=4" target="_blank">
+                    https://www.notion.so
+                </a>
+            </div>
+        </div>
+    </section><!-- 경력 사항  -->
+    <section class="career" id="career">
+        <h2>경력 사항</h2>
+        <details>
+            <summary>학생회</summary>
+            <ul>
+                <li>덕성여자대학교 과학기술대학 학생회 사무국원</li>
+                <li>덕성여자대학교 과학기술대학 학생회 사무국장</li>
+            </ul>
+        </details>
+        <details>
+            <summary>동아리</summary>
+            <ul>
+                <li>사이버보안 동아리 BackDoor IoT보안팀원</li>
+            </ul>
+        </details>
+    </section>
+<!-- 학력 소개 -->
+    <section class="education" id="education">
+        <h2>학력</h2>
+        <ul>
+            <li>덕성여자대학교 디지털소프트웨어공학부 24년도 입학</li>
+        </ul>
+    </section>
+<!-- 연구 소개 -->
+    <section class="study" id="study">
+        <h2>연구</h2>
+        <details>
+        <summary>쿨쿨쿨</summary>
+            <ul>
+                <li>낮잠을 끝내주게 자는 방법</li>
+                <li>늦잠을 끝내주게 자는 방법</li>
+            </ul>
+        </details>
+    </section>
+<!-- 프로젝트 소개 -->    
+    <section class="projects" id="projects">
+        <h2>프로젝트</h2>
+        <ol>
+            <li> <!-- 첫 번째째 프로젝트의 이미지 및 GitHub 링크 -->
+                <strong>카페 소개 프로젝트</strong><br>
+                덕성여자대학교 교내/외 카페를 볼 수 있는 웹 사이트 제작
+                <div class="project-table-wrapper">
+                    <table class="project-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://chltndus0401.github.io/study0/" target="_blank"> <!-- 사진 누르면 웹페이지로 이동 -->
+                                        <img src="media/project.png" width="150" height="150" alt="프로젝트 바로 가기">
+                                        <p></p> <!-- 프로젝트 깃허브 저장소 하이퍼텍스트 -->
+                                        <a href="https://github.com/chltndus0401/study0" target="_blank">
+                                            프로젝트 GitHub 저장소 바로 가기
+                                        </a>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li><p></p>
+            <li> <!-- 두 번째 프로젝트의 이미지 및 GitHub 링크 -->
+                <strong>주사용 프로그래밍 언어 설문조사용 웹 폼</strong><br>
+                답변이 스프레드시트로 저장되게 설계함
+                <div class="project-table-wrapper">
+                    <table class="project-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://chltndus0401.github.io/portfolio/form.html" target="_blank"> <!-- 사진 누르면 웹페이지로 이동 -->
+                                        <img src="media/form.png" width="150" height="150" alt="프로젝트 바로 가기">
+                                        <p></p> <!-- 프로젝트 깃허브 저장소 하이퍼텍스트 -->
+                                        <a href="https://github.com/chltndus0401/portfolio" target="_blank">
+                                            프로젝트 GitHub 저장소 바로 가기
+                                        </a>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+    </section>
+    </main>
+</body>
+<footer class="footer-fixed"> <!--footer add-->
+    제작자: 수연 | 이메일: <a href="mailto:ally5336@naver.com" style="color: #aad;">ally5336@naver.com</a>
+</footer>
+</html>
